@@ -1,0 +1,91 @@
+/* hero block */
+.heroBlock {
+  position: relative;
+  color: #fff;
+
+  &:before {
+    content: '';
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .content {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 50px;
+    margin: 0;
+  }
+}
+
+/* gallery block */
+.galleryBlock {
+  .col {
+    height: 370px;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+/* latest post block */
+.latestPostBlock {
+  background: #fafafa;
+
+  .image {
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+  }
+
+  h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    background: rgba(0,0,0,.3);
+    padding: 15px;
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .content {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-top: 0;
+    padding: 15px;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .light {
+    color: #999;
+    margin: 0;
+  }
+
+  .link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #1976d2;
+
+    &:hover {
+      color: #05315c;
+    }
+  }
+}

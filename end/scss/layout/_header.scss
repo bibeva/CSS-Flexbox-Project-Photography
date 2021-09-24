@@ -1,0 +1,39 @@
+/* header */
+#header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+  }
+}
+
+#nav {
+  ul {
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+  }
+
+  a {
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+    transition: background 0.3s linear;
+
+    &:hover {
+      background: #f4f4f4;
+    }
+  }
+}
