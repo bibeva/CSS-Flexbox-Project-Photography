@@ -21,10 +21,10 @@
     }
 
     a {
-      color: #333;
+      color: $lightBlack;
 
       &:hover {
-        color: #1976d2;
+        color: $primaryColor;
       }
     }
   }
@@ -37,7 +37,7 @@
     }
     
     a {
-      color: #1976d2;
+      color: $primaryColor;
     }
   }
 }

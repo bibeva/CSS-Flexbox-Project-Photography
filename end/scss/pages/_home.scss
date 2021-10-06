@@ -1,7 +1,7 @@
 /* hero block */
 .heroBlock {
   position: relative;
-  color: #fff;
+  color: $white;
 
   &:before {
     content: '';
@@ -59,7 +59,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    color: #fff;
+    color: $white;
     background: rgba(0,0,0,.3);
     padding: 15px;
     margin: 0;
@@ -67,7 +67,7 @@
   }
 
   .content {
-    background: #fff;
+    background: $white;
     border: 1px solid #e6e6e6;
     border-top: 0;
     padding: 15px;
@@ -82,7 +82,7 @@
   .link {
     text-decoration: none;
     text-transform: uppercase;
-    color: #1976d2;
+    color: $primaryColor;
 
     &:hover {
       color: #05315c;

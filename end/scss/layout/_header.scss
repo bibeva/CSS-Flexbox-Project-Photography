@@ -13,7 +13,7 @@
 
     a {
       text-decoration: none;
-      color: #333;
+      color: $lightBlack;
     }
   }
 }
@@ -29,7 +29,7 @@
     padding: 20px;
     text-decoration: none;
     display: block;
-    color: #333;
+    color: $lightBlack;
     transition: background 0.3s linear;
 
     &:hover {
