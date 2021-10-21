@@ -1,5 +1,10 @@
 /* header */
 #header {
+  @media only screen and (max-width: 767px) {
+    padding: 15px 0;
+    position: relative;
+  }
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -19,10 +24,40 @@
 }
 
 #nav {
+  #burgerMenu {
+    background: none;
+    border: 0;
+    cursor: pointer;
+
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
   ul {
     list-style: none;
     display: flex;
     text-transform: uppercase;
+
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+
+    &.show {
+      @media only screen and (max-width: 767px) {
+        display: block;
+        position: absolute;
+        z-index: 99;
+        background: $primaryColor;
+        left: 0;
+        right: 0;
+        top: 100%;
+
+        a {
+          color: $white;
+        }
+      }
+    }
   }
 
   a {
@@ -31,6 +66,10 @@
     display: block;
     color: $lightBlack;
     transition: background 0.3s linear;
+
+    @media only screen and (max-width: 767px) {
+      padding: 20px 10px;
+    }
 
     &:hover {
       background: #f4f4f4;
